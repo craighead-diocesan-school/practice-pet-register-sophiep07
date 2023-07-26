@@ -30,4 +30,19 @@ function addPet() {
   //then it makes a new object which is then pushed to the array of pets
 }
 
-function searchPet() {}
+function searchPet() {
+  alert("Search for a pet!")
+  let searchName = prompt("Enter the name of the pet you want to find in the system.")
+  let searchResult = "is not in the system"
+  for (let pet of pets) {
+    if (pet.name == searchName) {
+      searchResult = "is in the system"
+    }
+  }
+  alert(searchName + " " + searchResult)
+}
+
+function removePet() {}
+
+//to do: -searching array of objects (Number search / for...of   if)
+//to do: -removing specific object from array (Number search / for...of   if   splice)
