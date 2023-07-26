@@ -1,7 +1,9 @@
-function showName() {
-  alert(petName)
-  //outputs the array of pet names for the user
+function showPet() {
+  alert("Here are the pets in our system!")
+  for (let pet of pets) alert(pet.name + " is a " + pet.age + " year old " + pet.species + ".")
+  //outputs the array of pets for the user
 }
+//maybe write it so it says: 'name' is a 'age' year old 'species'
 
 let pets = [
   { name: "Buddy", age: 4, species: "Dog" },
