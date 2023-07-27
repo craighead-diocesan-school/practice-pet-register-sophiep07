@@ -40,9 +40,12 @@ function searchPet() {
     }
   }
   alert(searchName + " " + searchResult)
+  //the searches for a pet in the system
+  //asks the user for the name of the pet and outputs if the pet is in the system or not
+  //the result starts off with being 'not in the system'
+  //if the name inputed buy the user matches any name from the pet array the result is changed to 'in the system'
 }
 
 function removePet() {}
 
-//to do: -searching array of objects (Number search / for...of   if)
 //to do: -removing specific object from array (Number search / for...of   if   splice)
