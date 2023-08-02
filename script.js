@@ -46,6 +46,15 @@ function searchPet() {
   //if the name inputed buy the user matches any name from the pet array the result is changed to 'in the system'
 }
 
-function removePet() {}
-
-//to do: -removing specific object from array (Number search / for...of   if   splice)
+function removePet() {
+  let index = 0
+  for (let pet of pets) {
+    alert(index + " : " + pet.name)
+    index = index + 1
+  }
+  //outputs the name of each pet with the number of the index
+  let pettoRemove = prompt("Enter the number for the pet you want to remove.")
+  //user imputs the index for the pet they want to remove from the system
+  pets.splice(pettoRemove, 1)
+  //pet is removed at the index
+}
