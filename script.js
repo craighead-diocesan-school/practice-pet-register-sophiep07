@@ -10,7 +10,7 @@ let pets = [
   { name: "Coco", age: 7, species: "cat" },
   { name: "Cotton", age: 2, species: "sheep" },
   { name: "Duke", age: 1, species: "fish" },
-  { name: "Buddy", age: 6, species: "horse" },
+  { name: "Bunny", age: 6, species: "horse" },
 ]
 //the array contains the names, age, and species of the pets
 //they used to be just strings but now they are changed to objects
