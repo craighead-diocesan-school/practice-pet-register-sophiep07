@@ -4,7 +4,6 @@ function showPet() {
     alert(pet.name + " is a " + pet.age + " year old " + pet.species + ".")
   }
   //outputs the array of pets for the user
-  //maybe write it so it says: 'name' is a 'age' year old 'species'
 }
 
 let pets = [
