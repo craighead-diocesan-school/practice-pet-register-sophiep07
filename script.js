@@ -24,7 +24,7 @@ function addPet() {
   let age = prompt("What is " + name + "'s age?")
   let species = prompt("What is " + name + "'s species?")
   //now check if the input from the user is valid
-  if (name != "" && age > 0 && age < 200 && species != "") {
+  if (name.match(/^[a-zA-Z0-9]+$/) && age.match(/^([1-9]|[1-9][0-9]|1[0-4][0-9]|150)$/) && species.match(/^[a-zA-Z]+$/)) {
     //create pet object with details
     let pet = {
       name: name,
