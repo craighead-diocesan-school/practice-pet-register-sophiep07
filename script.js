@@ -1,6 +1,8 @@
 function showPet() {
   alert("Here are the pets in our system!")
-  for (let pet of pets) alert(pet.name + " is a " + pet.age + " year old " + pet.species + ".")
+  for (let pet of pets) {
+    alert(pet.name + " is a " + pet.age + " year old " + pet.species + ".")
+  }
   //outputs the array of pets for the user
   //maybe write it so it says: 'name' is a 'age' year old 'species'
 }
@@ -16,18 +18,25 @@ let pets = [
 //they used to be just strings but now they are changed to objects
 
 function addPet() {
+  //asks the user for the name, age, and species of a new pet
   alert("Add a new pet to the system! Enter its details here.")
   let name = prompt("What is the name of the pet?")
   let age = prompt("What is " + name + "'s age?")
   let species = prompt("What is " + name + "'s species?")
-  let pet = {
-    name: name,
-    age: age,
-    species: species,
+  //now check if the input from the user is valid
+  if (name != "" && age > 0 && age < 200 && species != "") {
+    //create pet object with details
+    let pet = {
+      name: name,
+      age: age,
+      species: species,
+    }
+    pets.push(pet)
+    //add pet object to pet array
+  } else {
+    alert("Your pet details are not valid. Try again.")
+    //if user input does not match the if it is alerted that the input was invalid
   }
-  pets.push(pet)
-  //asks the user for the name, age, and species of a new pet
-  //then it makes a new object which is then pushed to the array of pets
 }
 
 function searchPet() {
